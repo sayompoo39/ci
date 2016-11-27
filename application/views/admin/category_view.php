@@ -5,6 +5,12 @@
             <h1 class="page-header">จัดการหมวดหมู่ข่าว</h1>
         </div>
         <!-- /.col-lg-12 -->
+        <div class="col-lg-12">
+            <div class="text-right">
+                 <a href="<?php echo base_url('admin/add_category')?>" class="btn btn-xs btn-primary">
+                <i class="fa fa-plus"></i> เพิ่มหมวดหมู่
+            </a>
+        </div>
         <table class="table">
             <tr>
                 <th>#</th>
@@ -15,13 +21,11 @@
                 <td>1</td>
                 <td>กีฬา</td>
                 <td>
-                    <a href="#"class=""btn btn-xs btn-warnning">
-                    <i class"fa fa-edit"></i>แก้ไข
+                    <a href="#"class="btn btn-xs btn-warning">
+                    <i class="fa fa-edit"></i> แก้ไข
                     </a>
-                </td>
-                <td>
-                    <a href="#"class=""btn btn-xs btn-danger">
-                    <i class"fa fa-times"></i>ลบ
+                    <a href="#"class="btn btn-xs btn-danger">
+                    <i class="fa fa-times"></i> ลบ
                     </a>
                 </td>
             </tr>

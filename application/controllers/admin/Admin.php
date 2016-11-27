@@ -21,6 +21,10 @@ class Admin extends  CI_Controller
         $this->load->view('admin/category_view');
         $this->load->view('admin/layout/admin_footer_view');
     }
+    public function add_category()
+    {
+
+    }
     public function news()
     {
         $this->load->view('admin/layout/admin_header_view');
