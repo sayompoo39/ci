@@ -56,9 +56,14 @@ class Admin extends  CI_Controller
         $this->load->view('admin/edit_category_view', $data);
         $this->load->view('admin/layout/admin_footer_view');
     }
-    public function delete_category()
+    public function update_category($category_id)
     {
-
+        $name = $this->input->post('name');
+        $this->category_model->updateCategory($category_id);
+    }
+    public  function  delete_category($category_id)
+    {
+        $this->category_model->deleteCategory($category_id);
     }
     public function news()
     {

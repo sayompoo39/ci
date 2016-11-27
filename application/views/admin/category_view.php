@@ -27,8 +27,10 @@
                     <a href="<?php echo base_url('admin/edit_category/'. $category->category_id)?>"class="btn btn-xs btn-warning">
                     <i class="fa fa-edit"></i> แก้ไข
                     </a>
-                    <a href="<?php echo base_url('admin/delete_category'. $category->category_id)?>"class="btn btn-xs btn-danger">
-                    <i class="fa fa-times"></i> ลบ
+                    <a href="<?php echo base_url('admin/delete_category'. $category->category_id)?>"
+                       onclick="javascript confirm('แน่ใจนะ');"
+                       class="btn btn-xs btn-danger">
+                        <i class="fa fa-times"></i> ลบ
                     </a>
                 </td>
             </tr>
