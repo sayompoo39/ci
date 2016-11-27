@@ -21,4 +21,9 @@ class Category_model extends CI_Model
         );
         $this->db->insert('categories',$data);
     }
+    public  function  getCategoryByID($category_id)
+    {
+        $this->db->where('category_id',$category_id);
+        return $this->db->get('categories');
+    }
 }
