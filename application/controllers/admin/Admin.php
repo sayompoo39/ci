@@ -30,7 +30,9 @@ class Admin extends  CI_Controller
     }
     public function  create_category()
     {
+        $this->load->model('category_model');
         $name = $this->input->post('name');
+        $this->category_model->insertCategory($name);
     }
     public function news()
     {
