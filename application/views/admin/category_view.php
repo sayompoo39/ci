@@ -17,12 +17,12 @@
                 <th>ชื่อหมวดหมู่</th>
                 <th>จัดการ</th>
             </tr>
-            <?php if($categories->num_row > 0) {
+            <?php if($categories->num_rows > 0) {
                 foreach($categories->result() as $category){
                 ?>
             <tr>
                 <td>1</td>
-                <td>กีฬา</td>
+                <td><?php echo $category->name ?></td>
                 <td>
                     <a href="#"class="btn btn-xs btn-warning">
                     <i class="fa fa-edit"></i> แก้ไข
