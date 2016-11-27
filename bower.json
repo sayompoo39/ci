@@ -17,6 +17,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "font-awesome": "fontawesome#^4.7.0",
-    "bootstrap": "boostrap#^3.3.7"
+    "bootstrap": "boostrap#^3.3.7",
+    "sb-admin-2": "*"
   }
 }
