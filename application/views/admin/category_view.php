@@ -17,6 +17,9 @@
                 <th>ชื่อหมวดหมู่</th>
                 <th>จัดการ</th>
             </tr>
+            <?php if($categories->num_row > 0) {
+                foreach($categories->result() as $category){
+                ?>
             <tr>
                 <td>1</td>
                 <td>กีฬา</td>
@@ -29,7 +32,13 @@
                     </a>
                 </td>
             </tr>
+            <?php }
+            }else{ ?>
+            <tr>
+                <td colspan="3">==ไม่มีข้อมูล==</td>
+            </tr>
         </table>
+            <?php } ?>
     </div>
     <!-- /.row -->
 </div>
