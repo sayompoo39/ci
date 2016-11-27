@@ -8,7 +8,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="<?php echo base_url('bower_components/sb-admin-2/css/bootstrap.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('bower_components/bootstrap/dist/css/bootstrap.min.css')?>" rel="stylesheet">
 
     <link rel="stylesheet" href="<?php echo base_url('bower_components/font-awesome/css/font-awesome.min.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('bower_components/animate.css/animate.min.css')?>">
