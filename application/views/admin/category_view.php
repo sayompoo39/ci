@@ -17,7 +17,7 @@
                 <th>ชื่อหมวดหมู่</th>
                 <th>จัดการ</th>
             </tr>
-            <?php if($categories->num_rows > 0) {
+            <?php if($categories->num_rows() > 0) {
                 foreach($categories->result() as $category){
                 ?>
             <tr>
